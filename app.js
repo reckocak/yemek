@@ -20,12 +20,16 @@ function yemekler(datA) {
 document.querySelector('.ekran').innerHTML='';
 
 for (const key of datA) {
-document.querySelector('.ekran').innerHTML+=` <div class="col-md-3">   <div class="card">
+document.querySelector('.ekran').innerHTML+=` 
+<div class="col-md-3 col-lg-2">   <div class="card">
   <img src=${key.strMealThumb} class="card-img-top" >
   <div class="card-body">
     <h5 class="card-title">${key.strMeal}</h5>   
   </div>
-</div></div>  `
+</div></div>
+
+
+ `
 }
 }  
 
